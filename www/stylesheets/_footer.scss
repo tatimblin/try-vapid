@@ -1,0 +1,15 @@
+footer {
+    background-color: $dark;
+    color: $light;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing/2;
+
+    @include query ($screen-md) {
+        padding: 0 $spacing;
+    }
+}

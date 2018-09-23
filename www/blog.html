@@ -14,10 +14,24 @@
 
     <div class="container large-width">
 
-      <div class="content">
+      <div class="blog content">
+        {{#section Posts multiple=true order=start}}
+        
+        <div class="item">
 
-        Intro
+            <a href="{{ _permalink }}">
 
+            {{ symbol type=image }}
+
+            <h2>{{ title }}</h2>
+
+            <small>{{ start type=date format="%B %d" }} – {{ end type=date format="%B %d" }}</small>
+
+            </a>
+
+        </div>
+
+        {{ /section }}
       </div>
 
     </div>

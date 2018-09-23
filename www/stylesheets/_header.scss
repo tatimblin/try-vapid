@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $spacing 0;
+    padding: 0 $spacing/2;
+
+    @include query ($screen-md) {
+        padding: 0 $spacing;
+    }
+
+    .logo {
+        min-width: 80px;
+        max-width: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    ul {
+        li {
+            display: inline-block;
+            padding: 5px 0 5px $spacing;
+        }
+    }
+}
