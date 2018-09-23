@@ -1,0 +1,31 @@
+
+// COLORS
+// ---------------
+
+$brand: #7E57C2;
+$light: #ececec;
+$dark: #202020;
+
+$bg: $light;
+
+
+// SIZINGS
+// ---------------
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 1080px;
+
+$spacing: 30px;
+
+@mixin query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+
+// EASINGS
+// ---------------
+
+ $dur: 300ms;
+ $ease: cubic-bezier(0.785, 0.135, 0.15, 0.86);
